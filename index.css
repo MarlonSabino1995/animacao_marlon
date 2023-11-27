@@ -1,0 +1,265 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #020786;
+    overflow: hidden;
+}
+
+.mapa {
+    position: relative;
+    width: 50rem;
+    height: 30rem;
+    background-image: url('./imagens/mapa_2d_liso_2.png');
+    background-size: cover;
+    border: 5px solid #00f5ff;
+    border-radius: 10px;
+}
+
+
+.casa,
+.arvore {
+    z-index: 1;
+    width: 80px;
+    position: absolute;
+}
+
+.casa {
+    top: 290px;
+    left: 450px;
+}
+
+.arvore1 {
+    top: 280px;
+    left: 220px;
+    transform: translateX(-50%);
+}
+
+.arvore2 {
+    top: 280px;
+    left: 630px;
+    transform: translateX(-50%);
+}
+
+.boneco {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    top: 100px;
+    left: 50px;
+    background-image: url('./imagens/sprite_boneco.png');
+    animation: animacaoBoneco 20s steps(4) infinite;
+    transform: scale(0.7);
+}
+
+@keyframes animacaoBoneco {
+    0% {
+        background-position: -0px -131px;
+        top: 260px;
+        left: 180px;
+    }
+    2.5%{
+        background-position: -256px -131px;
+        top: 260px;
+        left: 230px;
+    }
+    5% {
+        background-position: -0px -131px;
+        top: 260px;
+        left: 280px;
+    }7.5%{
+        background-position: -256px -131px;
+        top: 260px;
+        left: 330px;
+    }
+    10% {
+        background-position: -0px -131px;
+        top: 260px;
+        left: 380px;
+    }12.5%{
+        background-position: -256px -131px;
+        top: 260px;
+        left: 430px;
+    }
+    15% {
+        background-position: -0px -131px;
+        top: 260px;
+        left: 480px;
+    }17.5%{
+        background-position: -256px -131px;
+        top: 260px;
+        left: 540px;
+    }
+    20% {
+        background-position: -0px -131px;
+        top: 260px;
+        left: 600px;
+    }
+    23% {
+        background-position: -256px -131px;
+        top: 260px;
+        left: 650px;
+    }
+    23.001% {
+        background-position: -0px -0px;
+        top: 260px;
+        left: 650px;
+    }25%{
+        background-position: -256px -0px;
+        top: 295px;
+        left: 650px;
+    }
+    28% {
+        background-position: -0px -0px;
+        top: 335px;
+        left: 650px;
+    }
+    28.001% {
+        background-position: -0px -64px;
+        top: 335px;
+        left: 650px;
+    }31%{
+        background-position: -256px -64px;
+        top: 335px;
+        left: 600px;
+    }
+    35% {
+        background-position: -0px -64px;
+        top: 335px;
+        left: 550px;
+    }
+
+    35.001% {
+        background-position: -0px -0px;
+        top: 335px;
+        left: 550px;
+    }
+
+    40% {
+        background-position: -256px -0px;
+        top: 360px;
+        left: 550px;
+    }
+
+    40.001% {
+        background-position: -0px -64px;
+        top: 360px;
+        left: 550px;
+    }
+    42.5%{
+        background-position: -256px -64px;
+        top: 360px;
+        left: 490px;
+    }
+    45% {
+        background-position: -0px -64px;
+        top: 360px;
+        left: 440px;
+    }
+    50% {
+        background-position: -256px -64px;
+        top: 360px;
+        left: 390px;
+    }
+    50.001% {
+        background-position: -0px -192px;
+        top: 360px;
+        left: 390px;
+    }52.5%{
+        background-position: -256px -192px;
+        top: 330px;
+        left: 390px;
+    }
+    55% {
+        background-position: -0px -192px;
+        top: 300px;
+        left: 390px;
+    }
+    55.001% {
+        background-position: -0px -64px;
+        top: 300px;
+        left: 390px;
+    }58%{
+        background-position: -256px -64px;
+        top: 300px;
+        left: 330px;
+    }60%{
+        background-position: -0px -64px;
+        top: 300px;
+        left: 290px;
+    }
+    63% {
+        background-position: -256px -64px;
+        top: 300px;
+        left: 260px;
+    }
+
+    63.001% {
+        background-position: -0px -0px;
+        top: 300px;
+        left: 260px;
+    }
+
+    67% {
+        background-position: -256px -0px;
+        top: 335px;
+        left: 260px;
+    }
+
+    67.001% {
+        background-position: -0px -64px;
+        top: 335px;
+        left: 260px;
+    }71%{
+        background-position: -256px -64px;
+        top: 335px;
+        left: 220px;
+    }73%{
+        background-position: -0px -64px;
+        top: 335px;
+        left: 180px;
+    }
+    75% {
+        background-position: -256px -64px;
+        top: 335px;
+        left: 140px;
+    }
+
+    75.001% {
+        background-position: -0px -192px;
+        top: 335px;
+        left: 140px;
+    }78%{
+        background-position: -256px -192px;
+        top: 300px;
+        left: 140px;
+    }80%{
+        background-position: -0px -192px;
+        top: 280px;
+        left: 140px;
+    }
+    83% {
+        background-position: -256px -192px;
+        top: 260px;
+        left: 140px;
+    }
+
+    83.001% {
+        background-position: -0px -128px;
+        top: 260px;
+        left: 140px;
+    }
+
+    90% {
+        background-position: -256px -128px;
+        top: 260px;
+        left: 180px;
+    }
+
+    100% {
+        background-position: -0px -131px;
+        top: 260px;
+        left: 180px;
+    }
+}
